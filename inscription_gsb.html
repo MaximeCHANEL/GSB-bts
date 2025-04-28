@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Inscription</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Accueil</a></li>
+                <li class="nav-item"><a href="connexion_gsb.html">Compte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="h2"> Formulaire d'inscription</h2>
+        <form name="forins" id="forins" method="post" action="inscription_gsb.php">
+            <table>
+                <tr>
+                    <td><label for="matricule">Matricule :</label></td>
+                    <td><input type="text" name="matricule" id="matricule" class="champ" /></td>
+                </tr>
+                <tr>
+                    <td><label for="nom">Nom :</label></td>
+                    <td><input type="text" name="nom" id="nom" class="champ" /></td>
+                </tr>
+                <tr>
+                    <td><label for="prenom">Prenom :</label></td>
+                    <td><input type="text" name="prenom" id="prenom" class="champ" /></td>
+                </tr>
+                <tr>
+                    <td><label for="ville">Ville :</label></td>
+                    <td><input type="text" name="ville" id="ville" class="champ" /></td>
+                </tr>
+                <tr>
+                    <td><label for="mail">E-mail :</label> </td>
+                    <td><input type="text" name="mail" id="mail" class="champ" /></td>
+                </tr>
+                <tr>
+                    <td><label for="mdp">Mot de passe :</label></td>
+                    <td><input type="password" name="mdp" id="mdp" class="champ" /></td>
+                </tr>
+                <tr>
+                    <td><label for="cmdp">Confirmer mot de passe :</label></td>
+                    <td><input type="password" name="cmdp" id="cmdp" class="champ" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" id="envoi" name="Envoyer" value="Envoyer" /> <input
+                            type="reset" id="rafraichir" value="Rafraîchir" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GSB. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
