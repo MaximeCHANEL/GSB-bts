@@ -1,0 +1,341 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style global */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Barre de navigation */
+nav {
+    background-color: #098CFF;
+    padding: 15px;
+    color: white;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nav-item a:hover {
+    background-color: #0077cc;
+    border-radius: 5px;
+}
+
+.nav-item h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navbar img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar .title {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar .title li {
+    margin-left: 15px;
+}
+
+.navbar .title a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Dropdown menu */
+.dropdown {
+    list-style: none;
+    background-color: #098CFF;
+    padding-left: 0;
+    margin-top: 5px;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 5px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    background-color: #0077cc;
+}
+
+/* Conteneurs */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.containerModifUser {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+#inscription-container {
+    max-width: 600px;
+    padding-right: 50px;
+}
+
+.list_user {
+    text-align: center;
+    color: #098CFF;
+}
+
+.date {
+    color: white;
+    font-weight: bold;
+}
+
+/* Titres */
+h1 {
+    color: #098CFF;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title_nav {
+    color: white;
+}
+
+h2 {
+    color: #098CFF;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    color: #333;
+}
+
+/* Textes */
+p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+#justificatifRow {
+    display: none;
+}
+
+/* Informations */
+.info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.etat {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.etat.Validee {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.etat.Enattente {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.etat.Refusee {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f1f1f1;
+}
+
+.validee {
+    background-color: #d4edda;
+    color: #155724;
+    font-weight: bold;
+}
+
+.enattente {
+    background-color: #fff3cd;
+    color: #856404;
+    font-weight: bold;
+}
+
+.refusee {
+    background-color: #f8d7da;
+    color: #721c24;
+    font-weight: bold;
+}
+
+/* Boutons */
+
+a.button, .consulter-btn, .back-btn {
+    padding: 8px 12px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+a.button, .consulter-btn {
+    background-color: #098CFF;
+}
+
+a.button:hover, .consulter-btn:hover {
+    background-color: #0077cc;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #6c757d;
+}
+
+.back-btn:hover {
+    background-color: #5a6268;
+}
+
+.btn, button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #098CFF;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover, button:hover {
+    background-color: #0077cc;
+}
+
+#button_user {
+    margin-top: 20px;
+}
+
+#buttonEnvoyer {
+    text-align: center;
+}
+
+/* Formulaires */
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: vertical;
+}
+
+input[type="submit"], 
+input[type="button"], 
+input[type="reset"] {
+    background-color: #098CFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover, 
+input[type="button"]:hover, 
+input[type="reset"]:hover {
+    background-color: #0077cc;
+}
+
+#button_user {
+    margin-top: 20px;
+}
+
+#buttonEnvoyer {
+    text-align: center;
+}
+
+/* Champ montant */
+.montant {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #f1f1f1;
+    color: #777;
+}
+
+/* Masquer un élément spécifique */
+.motif {
+    display: none;
+    margin-top: 15px;
+}

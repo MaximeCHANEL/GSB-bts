@@ -1,0 +1,69 @@
+<?php
+session_start();
+
+require __DIR__ . '/../Connection_creation_bdd/con_bdd.php'; // Inclusion de la connexion à la BDD
+
+require __DIR__ . '/../Logique_PHP/frais_hors_forfaits_logique.php';
+?>
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Inscription</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="espace_membre.php">GSB</a></li>
+                <li class="nav-item"><a href="frais_forfaitaires.php">Frais Forfaitaires</a></li>
+                <li class="nav-item"><a href="Afficher_frais_forfait.php">Liste frais</a></li>
+                <li>
+                    <?php echo $dateToday ?>
+                </li>
+                <li class="nav-item"><a href="./Connection/connexion_gsb.html">Bienvenue <?= ucfirst($nom) ?> <?= ucfirst($prenom) ?></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="h2"> Formulaire de frais hors forfaits</h2>
+        <form name="forins" id="forins" method="post" action="frais_hors_forfaits_processus.php">
+            <table>
+                <tr>
+                    <td><label for="libelle">Libelle :</label></td>
+                    <td><input type="text" name="libelle" id="libelle" class="champ" /></td>
+                </tr>
+                <tr>
+                    <td><label for="montant">Montant :</label></td>
+                    <td><input type="text" name="montant" id="montant" class="champ" /></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date :</label></td>
+                    <td><input type="date" id="date_hors_forfait" name="date" value="2025-01-10" min="2000-01-01" max="2035-12-31" /></td>
+                </tr>
+                <tr>
+                    <td><label for="justifications">Justifications :</label></td>
+                    <td>
+                        <textarea id="justification" name="justification" rows="5" cols="33">
+                        Ecrire la justification
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" id="envoi" name="Envoyer" value="Envoyer" /> <input
+                            type="reset" id="rafraichir" value="Rafraîchir" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GSB. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
