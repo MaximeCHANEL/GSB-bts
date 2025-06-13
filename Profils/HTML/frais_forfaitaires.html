@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Inscription</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">Accueil</a></li>
+                <li class="nav-item"><a href="frais_hors_forfaits.html">Saisis Frais Hors Forfaits</a></li>
+                <li class="nav-item"><a href="./Connection/connexion_gsb.html">Compte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="h2"> Formulaire de frais forfaitaires</h2>
+        <form name="forins" id="forins" method="post" action="frais_forfaitaires_processus.php">
+            <table>
+                <tr>
+                    <td><label for="libelle">Libelle :</label></td>
+                    <td>
+                        <select name="libelle" id="type_frais">
+                            <option value="">--Please choose an option--</option>
+                            <option value="nuitees">Nuitées</option>
+                            <option value="repas">Repas</option>
+                            <option value="kilometrage">Kilometrage</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="montant">Montant :</label></td>
+                    <td><input type="text" name="montant" id="montant" class="champ" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" id="envoi" name="Envoyer" value="Envoyer" /> <input
+                            type="reset" id="rafraichir" value="Rafraîchir" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GSB. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

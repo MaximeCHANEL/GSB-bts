@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/../assets/styles.css">
+    <title>Connexion</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="title">
+                <img src="../assets/gsb.png" alt="Logo">
+                <li><a href="/../index.html">Accueil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Formulaire de connexion</h2>
+        <form name="forcon" id="forins" method="post" action="connexion_gsb.php">
+            <table>
+                <tr>
+                    <td><label for="mail">Email :</label></td>
+                    <td><input type="text" name="mail" id="mail" class="champ" /></td>
+                </tr>
+                <tr>
+                    <td><label for="mdp">Mot de passe :</label></td>
+                    <td><input type="password" name="mdp" id="mdp" class="champ" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" id="envoi" name="Envoyer" value="Envoyer" />
+                        <input type="reset" id="rafraichir" value="Rafraîchir" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 GSB. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
